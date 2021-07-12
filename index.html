@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width">
     <title>PORTEN</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap" rel="stylesheet">    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js" ></script>
 </head>
 <body>
     <header>
-        <div class="header-info">
+        <div class="header-info mobile-off">
             <p><img class="img-phone" src="static/img/phone.svg" alt="иконка телефонной трубки">8 (812) 123-45-67  |  Работаем 7 дней в неделю  |  9:00 — 18:00</p>
             <a class="login-link" href="#"><img class="img-login" src="static/img/login.svg" alt=""><img class="img-login2" src="static/img/login2.svg" alt="иконка входа/регистрации">Войти  /  Регистрация</a>
         </div>
@@ -17,25 +19,40 @@
             <div>
                 <span class="label">porten</span>
                 <div class="header-navigation">
-                    <ul class="navigation-user">
+                    <ul class="navigation-user mobile-off">
                         <li><a href="#">понравилось</a></li>
                         <li><a href="#">личный кабинет</a></li>
                         <li><a href="#">настройки</a></li>
                     </ul>
                     <ul class="navigation-shopping">
                         <li><a href="#" class="img-cart"><img src="static/img/cart.svg" alt="корзина"></a></li>
-                        <li><a href="#"><img src="static/img/search.svg" alt="поиск"></a></li>
+                        <li><a href="#" class="img-search"><img src="static/img/search.svg" alt="поиск"></a></li>
                     </ul>
+
+                    <div class="menu-mobile mobile-on visually-hidden">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class="menu-mobile-btn" for="menu-toggle">
+                            <span></span>
+                        </label>
+                        <ul class="menu-mobile-box navigation-user mobile-on visually-hidden">
+                            <li><a href="#">понравилось</a></li>
+                            <li><a href="#">личный кабинет</a></li>
+                            <li><a href="#">настройки</a></li>
+                            <li><a class="login-link" href="#"><img class="img-login" src="static/img/login.svg" alt=""><img class="img-login2" src="static/img/login2.svg" alt="иконка входа/регистрации">Войти  /  Регистрация</a></li>
+                            <li><img class="img-phone" src="static/img/phone.svg" alt="иконка телефонной трубки">8 (812) 123-45-67  |  Работаем 7 дней в неделю  |  9:00 — 18:00</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
+
         </nav>
     </header>
     <main>
         <h1 class="visually-hidden">Мужской магазин PORTEN</h1>
         <div class="index-columns">
             <section class="first-screen">
-
-                <div class ="border">
+                <div class ="border mobile-off">
                     <p class="label">porten</p>
                     <p>санкт-петербург</p>
                 </div>
@@ -81,7 +98,7 @@
             </section>
 
             <section class="old-collection">
-                <img src="static/img/section-img.jpg" alt="">
+                <img class=" mobile-off" src="static/img/section-img.jpg" alt="">
                 <div>
                     <h2>коллекция 2018</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut<br>
@@ -209,11 +226,10 @@
             </div>
         </div>
         <div class="rights">
-            <p>© 2020 Все права защищены</p>
+            <p>© 2021 Все права защищены</p>
             <p>Сделано Figma.info</p>
         </div>
 
     </footer>
-
 </body>
 </html>
