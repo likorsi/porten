@@ -2,7 +2,7 @@
 
 Landing page of a men's store. The design of the page is made according to the [layout](https://www.figma.com/file/xHjAxd90oUnfpTQ5NZnSoz/Templates-%2317.-More-on-Figma.info?node-id=0%3A1).
 
-![PORTEN%20landing%20page/demo.png](PORTEN%20landing%20page/demo.png)
+![demo.png](demo.png)
 
 ## Demo
 
