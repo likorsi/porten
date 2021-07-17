@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -12,8 +12,8 @@
 <body>
     <header>
         <div class="header-info mobile-off">
-            <p><img class="img-phone" src="static/img/phone.svg" alt="иконка телефонной трубки">8 (812) 123-45-67  |  Работаем 7 дней в неделю  |  9:00 — 18:00</p>
-            <a class="login-link" href="#"><img class="img-login" src="static/img/login.svg" alt=""><img class="img-login2" src="static/img/login2.svg" alt="иконка входа/регистрации">Войти  /  Регистрация</a>
+            <p><img class="img-phone" src="static/img/icons/phone.svg" alt="иконка телефонной трубки">8 (812) 123-45-67  |  Работаем 7 дней в неделю  |  9:00 — 18:00</p>
+            <a class="login-link" href="#"><img class="img-login" src="static/img/icons/login.svg" alt=""><img class="img-login2" src="static/img/icons/login2.svg" alt="иконка входа/регистрации">Войти  /  Регистрация</a>
         </div>
         <nav>
             <div>
@@ -25,8 +25,8 @@
                         <li><a href="#">настройки</a></li>
                     </ul>
                     <ul class="navigation-shopping">
-                        <li><a href="#" class="img-cart"><img src="static/img/cart.svg" alt="корзина"></a></li>
-                        <li><a href="#" class="img-search"><img src="static/img/search.svg" alt="поиск"></a></li>
+                        <li><a href="#" class="img-cart"><img src="static/img/icons/cart.svg" alt="корзина"></a></li>
+                        <li><a href="#" class="img-search"><img src="static/img/icons/search.svg" alt="поиск"></a></li>
                     </ul>
 
                     <div class="menu-mobile mobile-on visually-hidden">
@@ -38,8 +38,8 @@
                             <li><a href="#">понравилось</a></li>
                             <li><a href="#">личный кабинет</a></li>
                             <li><a href="#">настройки</a></li>
-                            <li><a class="login-link" href="#"><img class="img-login" src="static/img/login.svg" alt=""><img class="img-login2" src="static/img/login2.svg" alt="иконка входа/регистрации">Войти  /  Регистрация</a></li>
-                            <li><img class="img-phone" src="static/img/phone.svg" alt="иконка телефонной трубки">8 (812) 123-45-67  |  Работаем 7 дней в неделю  |  9:00 — 18:00</li>
+                            <li><a class="login-link" href="#"><img class="img-login" src="static/img/icons/login.svg" alt=""><img class="img-login2" src="static/img/icons/login2.svg" alt="иконка входа/регистрации">Войти  /  Регистрация</a></li>
+                            <li><img class="img-phone" src="static/img/icons/phone.svg" alt="иконка телефонной трубки">8 (812) 123-45-67  |  Работаем 7 дней в неделю  |  9:00 — 18:00</li>
                         </ul>
                     </div>
 
@@ -68,7 +68,57 @@
             <section class="new-collection">
                 <div class="season">
                     <h2>сезон 2020/21</h2>
-                    <div class="card-product">
+                    <div class="carousel visually-hidden">
+                        <button class="prev">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 viewBox="0 0 443.52 443.52" xml:space="preserve">
+                                <path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+                                        c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+                                        L143.492,221.863z"/>
+                            </svg>
+                        </button>
+                        <div class="carousel-wrapper">
+                            <ul class="carousel-gallery">
+                                <li>
+                                    <a href="#" class="link-card-product">
+                                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
+                                        <p>
+                                            Louis XVI ATHOS<br>
+                                            165 000 руб.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-card-product">
+                                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
+                                        <p>
+                                            Louis XVI ATHOS<br>
+                                            165 000 руб.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-card-product">
+                                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
+                                        <p>
+                                            Louis XVI ATHOS<br>
+                                            165 000 руб.
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="next">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 viewBox="0 0 443.52 443.52" xml:space="preserve">
+                                    <path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+                                        L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+                                        C342.889,227.058,342.889,216.255,336.226,209.591z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card-product carousel-off">
                         <a href="#" class="link-card-product">
                             <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
                             <p>
