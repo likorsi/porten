@@ -2,7 +2,7 @@
 
 Landing page of a men's store. The design of the page is made according to the [layout](https://www.figma.com/file/xHjAxd90oUnfpTQ5NZnSoz/Templates-%2317.-More-on-Figma.info?node-id=0%3A1).
 
-![demo.png](demo.png)
+![static/demo.png](static/demo.png)
 
 ## Demo
 
@@ -21,6 +21,7 @@ Landing page of a men's store. The design of the page is made according to the [
 - Adaptive, cross-browser and semantic layout
 - Desktop, tablet and mobile versions
 - Pure css with variables and media expressions
+- Carousel made without libraries
 
 Use thе links to check the correctness of code using W3C services:
 
