@@ -2,7 +2,7 @@
     font-family: 'Post No Bills Jaffna Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Post No Bills Jaffna Regular'), url('static/fonts/PostNoBillsJaffna-Regular.woff') format('woff');
+    src: local('Post No Bills Jaffna Regular'), url('../static/fonts/PostNoBillsJaffna-Regular.woff') format('woff');
 }
 
 :root{
@@ -207,7 +207,7 @@ nav > div {
 .first-screen{
     width: 100%;
     min-height: 810px;
-    background-image: url("static/img/bg/first-screen-bg.jpg");
+    background-image: url("../static/img/bg/first-screen-bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
 
@@ -306,7 +306,7 @@ nav > div {
 }
 
 .collection{
-    background-image: url("static/img/bg/new-collection-bg.jpg");
+    background-image: url("../static/img/bg/new-collection-bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -403,7 +403,7 @@ footer{
 .footer-main{
     min-height: 400px;
 
-    background-image: url("static/img/bg/footer-main-bg.jpg");
+    background-image: url("../static/img/bg/footer-main-bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     margin: 0 auto;
