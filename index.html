@@ -79,33 +79,14 @@
                         </button>
                         <div class="carousel-wrapper">
                             <ul class="carousel-gallery">
-                                <li>
-                                    <a href="#" class="link-card-product">
-                                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                                        <p>
-                                            Louis XVI ATHOS<br>
-                                            165 000 руб.
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-card-product">
-                                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                                        <p>
-                                            Louis XVI ATHOS<br>
-                                            165 000 руб.
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-card-product">
-                                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                                        <p>
-                                            Louis XVI ATHOS<br>
-                                            165 000 руб.
-                                        </p>
-                                    </a>
-                                </li>
+                                <template id="card-product-template-li">
+                                    <li>
+                                        <a href="#">
+                                            <img src="" alt="#">
+                                            <p></p>
+                                        </a>
+                                    </li>
+                                </template>
                             </ul>
                         </div>
 
@@ -119,27 +100,6 @@
                         </button>
                     </div>
                     <div class="card-product carousel-off">
-                        <a href="#" class="link-card-product">
-                            <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                            <p>
-                                Louis XVI ATHOS<br>
-                                165 000 руб.
-                            </p>
-                        </a>
-                        <a href="#" class="link-card-product">
-                            <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                            <p>
-                                Louis XVI ATHOS<br>
-                                165 000 руб.
-                            </p>
-                        </a>
-                        <a href="#" class="link-card-product">
-                            <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                            <p>
-                                Louis XVI ATHOS<br>
-                                165 000 руб.
-                            </p>
-                        </a>
                     </div>
                 </div>
                 <div class="collection">
@@ -168,73 +128,21 @@
             <section class="goods">
                 <h2>новые поступления</h2>
                 <div class="card-product">
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
-                    <a href="#" class="link-card-product">
-                        <img src="static/img/wrist-watch.png" alt="наручные часы Louis XVI ATHOS">
-                        <p>
-                            Louis XVI ATHOS<br>
-                            165 000 руб.
-                        </p>
-                    </a>
+                    <template id="card-product-template">
+                        <a href="#" class="link-card-product">
+                            <img alt="" src="">
+                            <p></p>
+                        </a>
+                    </template>
                 </div>
             </section>
 
             <section class="brands">
                 <h2>наши бренды</h2>
                 <ul>
-                    <li><img src="static/img/brand.svg" alt="логотип бренда Cocofine Jewelry"></li>
-                    <li><img src="static/img/brand.svg" alt="логотип бренда Cocofine Jewelry"></li>
-                    <li><img src="static/img/brand.svg" alt="логотип бренда Cocofine Jewelry"></li>
-                    <li><img src="static/img/brand.svg" alt="логотип бренда Cocofine Jewelry"></li>
+                    <template id="brands-template">
+                        <li><img src="static/img/brand.svg" alt="#"></li>
+                    </template>
                 </ul>
             </section>
         </div>
