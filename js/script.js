@@ -27,25 +27,24 @@ function changeContentForDevice() {
 
 function changeSlideWidth() {
     slideWidth = carousel.children.item(0).offsetWidth
-    wrapper = document.querySelector(".carousel-wrapper")
-    wrapper.style.minWidth = slideWidth + 'px'
+    let wrapper = document.querySelector(".carousel-wrapper")
+    position = 0
+    wrapper.style.width = slideWidth + 'px'
+    carousel.style.marginLeft = 0
 }
 
 changeContentForDevice()
 window.addEventListener("resize", changeContentForDevice)
 
-
-let btnNext = document.querySelector(".next")
-let btnPrev = document.querySelector(".prev")
 let carousel = document.querySelector(".carousel-gallery")
-let wrapper = document.querySelector(".carousel-wrapper")
 let slideWidth = carousel.children.item(0).offsetWidth
 let position = 0;
 
-wrapper.style.minWidth = slideWidth + 'px'
+changeSlideWidth()
 window.addEventListener("resize", changeSlideWidth)
 
-
+let btnNext = document.querySelector(".next")
+let btnPrev = document.querySelector(".prev")
 
 btnPrev.onclick = function() {
     position += slideWidth;
