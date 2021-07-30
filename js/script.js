@@ -27,7 +27,6 @@ function changeContentForDevice() {
 
 function changeSlideWidth() {
     slideWidth = carousel.querySelector('li').offsetWidth
-    let wrapper = document.querySelector(".carousel-wrapper")
     position = 0
     wrapper.style.width = slideWidth + 'px'
     carousel.style.marginLeft = 0
@@ -73,6 +72,8 @@ window.addEventListener("resize", changeContentForDevice)
 
 const carousel = document.querySelector(".carousel-gallery")
 let slideWidth = carousel.querySelector('li').offsetWidth
+let wrapper = document.querySelector(".carousel-wrapper")
+wrapper.style.width = slideWidth + 'px'
 let position = 0;
 
 changeSlideWidth()
